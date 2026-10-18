@@ -1,0 +1,26 @@
+@use "../tools" as *;
+
+.phone-box {
+	@include reset-list;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px adapt(20, 12);
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	&__link {
+	}
+
+	&__link-icon {
+		flex-shrink: 0;
+		@include square(20px);
+
+		@include media($mobile) {
+			@include square(26px);
+		}
+	}
+}

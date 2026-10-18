@@ -1,0 +1,35 @@
+@use "../tools" as *;
+
+:root {
+	--color-0: rgba(0, 0, 0, 0);
+	--color-black: #000;
+	--color-white: #fff;
+	// Colors
+	--color-dark: #282828;
+	--color-light: #fafaf9;
+	--color-light-2: #fcfeff;
+
+	--color-blue: #305cb8;
+	--color-blue-hover: #2a67e6;
+	--color-blue-light: #97addb;
+
+	--color-stroke: #d5d8d9;
+	--color-gray: #a8a8a8;
+	--color-gray-2: #606060;
+	--color-gray-3: #535353;
+
+	// Layouts
+	--header-height: #{adapt(115, 76)};
+	--section-padding: #{adapt(120, 56)};
+
+	--container-width: 1200px;
+	--container-padding: 10px; //! даже если контейнер на весь экран, отступы оставь а ширину сделай на 100%
+
+	// Fonts
+	--font-size-html: 100%; // 1rem = 1px ===> calc(1 / 16 * 100%)
+	--font-size: 1rem;
+	--font-family-main: "RobotoFlex-VF", "RobotoFlex", sans-serif;
+
+	--line-height: 120%;
+	--letter-spacing: auto;
+}

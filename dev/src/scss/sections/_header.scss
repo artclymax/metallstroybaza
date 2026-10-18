@@ -1,0 +1,60 @@
+@use "../tools" as *;
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-block: 12px;
+	background: var(--color-light-2);
+
+	@include mobile-header(var(--color-light-2)) {
+		box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05);
+	}
+
+	.admin-bar & {
+		top: var(--wp-admin--admin-bar--height);
+	}
+	@include media($tablet) {
+		padding-block: 16px;
+	}
+
+	&__container {
+		position: relative;
+		z-index: 5;
+	}
+
+	&__menu {
+	}
+	&__body {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+	}
+	&__logo {
+	}
+
+	&__catalog-btn {
+	}
+
+	&__search {
+		flex: 1;
+	}
+
+	&__search-btn {
+		margin-left: auto;
+		@include media($tablet, min) {
+			display: none;
+		}
+	}
+
+	&__bottom-menu {
+	}
+
+	&__catalog-menu {
+	}
+}
+
+.header-menu {
+	
+}
